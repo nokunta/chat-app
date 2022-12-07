@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 var toobusy = require('node-toobusy');
 var express = require('express');
 var path = require('path');
@@ -12,6 +13,7 @@ var rfs = require('rotating-file-stream');
 var helmet = require('helmet');
 var compression = require('compression');
 var db = require('./dbconfig');
+const cors = require('cors');
 
 // Defining routes
 var routes = require('./routes');
@@ -49,7 +51,7 @@ app.use(require('express-status-monitor')({
     protocol: 'http',
     host: 'localhost',
     path: '/',
-    port: '3000'
+    port: '8080'
   }],
   // ignoreStartsWith: '/admin'
 }));
@@ -102,6 +104,7 @@ app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Methods", "HEAD, OPTIONS, GET, POST, PUT, PATCH, DELETE, CONNECT");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
+    app.use(cors());
     next();
 });
 

@@ -19,7 +19,7 @@ Install dependencies:
 $ npm install
 ```
 
-Start Express.js app at `http://localhost:3000/`:
+Start Express.js app at `http://localhost:8080/`:
 
 ```bash
 $ npm start
@@ -29,7 +29,7 @@ $ npm start
 
 Nodemon will watch the files in the directory in which nodemon was started, and if any files change, nodemon will automatically restart your node application.
 
-Start Express.js app with nodemon at `http://localhost:3000/`:
+Start Express.js app with nodemon at `http://localhost:8080/`:
 
 ```bash
 $ nodemon bin/www
@@ -41,7 +41,7 @@ Node PortFinder is a tool to find an open port or domain socket on the machine.
 
 ```js
 var portfinder = require('portfinder');
-var port = 3000;
+var port = 8080;
 var portSpan = 999;
 portfinder.getPort({
   port: port,    // minimum port number

@@ -8,6 +8,7 @@
   "dependencies": {
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
     "death": "^1.1.0",
     "debug": "^4.3.4",
     "event-loop-stats": "^1.4.1",
@@ -19,6 +20,7 @@
     "morgan": "^1.10.0",
     "node-toobusy": "^0.6.3",
     "portfinder": "^1.0.28",
+    "pusher": "^5.1.1-beta",
     "redis": "^4.1.0",
     "request": "^2.88.2",
     "rotating-file-stream": "^3.0.3",
@@ -26,6 +28,7 @@
     "winston": "^3.7.2"
   },
   "devDependencies": {
+    "eslint": "^8.23.0",
     "nodemon": "^2.0.16"
   }
 }
