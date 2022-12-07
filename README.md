@@ -25,4 +25,4 @@ Start Express.js app at `http://localhost:8080/`:
 $ npm start
 ```
 
-You can find all the doc about this on ttps://github.com/arjunkhetia/Node.Js-Express-Redis-Project.git
+You can find all the doc about this on https://github.com/arjunkhetia/Node.Js-Express-Redis-Project.git
